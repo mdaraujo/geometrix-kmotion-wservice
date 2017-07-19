@@ -1,0 +1,14 @@
+﻿<Application x:Class="HandController.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:HandController"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+        <Style x:Key="CheckBoxStyle" TargetType="CheckBox">
+            <Setter Property="MinHeight" Value="222" />
+            <Setter Property="MinWidth" Value="316" />
+            <Setter Property="MaxWidth" Value="948" />
+        </Style>
+    </Application.Resources>
+</Application>
