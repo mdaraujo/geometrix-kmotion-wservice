@@ -77,7 +77,7 @@ namespace HandController
         private Body[] bodies = null;
 
         /// <summary>
-        /// Initializes an instance of the <see cref="KinectPointerPointSample"/> class.
+        /// Initializes main window.
         /// </summary>
         public MainWindow()
         {
@@ -176,7 +176,7 @@ namespace HandController
                         }
                         else
                         {
-                            processHandStatClosed(false);
+                            processHandStateClosed(false);
                         }
                     }
                 }
@@ -191,11 +191,11 @@ namespace HandController
         {
             if (state == HandState.Closed)
             {
-                processHandStatClosed(true);
+                processHandStateClosed(true);
             }
             else
             {
-                processHandStatClosed(false);
+                processHandStateClosed(false);
             }
         }
 
@@ -203,7 +203,7 @@ namespace HandController
         /// Update the closed state of the engaged hand, if it is not already in the updated state
         /// </summary>
         /// <param name="closed">indicates if the engaged hand is closed</param>
-        public void processHandStatClosed(bool closed)
+        public void processHandStateClosed(bool closed)
         {
             if (hand.closed != closed)
             {
